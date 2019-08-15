@@ -203,7 +203,7 @@ To run, click on the `Add Configuration...` drop down in the top right and then 
 the `+` icon in the top left create a new `maven` deployment called run using the 
 command: `spring-boot:run`.
 
-Now navigate to `http://localhost:8080/greeting` and see the results!
+Now navigate to http://localhost:8080/greeting and see the results!
 
 As you can see, under the hood all of the `pojo` -> `Json` marshalling is done for us.
 Just by defining an object with the appropriate structure, the standard conventions in
