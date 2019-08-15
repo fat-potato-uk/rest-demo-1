@@ -199,6 +199,9 @@ public class Application {
 }
 ```
 
+There is quite a bit of magic that is going on in this class, give me a shout
+to explain the various incantations.
+
 To run, click on the `Add Configuration...` drop down in the top right and then using
 the `+` icon in the top left create a new `maven` deployment called run using the 
 command: `spring-boot:run`.
