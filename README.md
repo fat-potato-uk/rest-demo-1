@@ -34,7 +34,7 @@ You should be presented with a project with the following structure:
 
 As a starting point, replace the `pom.xml` contents with the following:
 
-```
+```xml
 <?xml version="1.0" encoding="UTF-8"?>
 <project xmlns="http://maven.apache.org/POM/4.0.0"
          xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
@@ -95,7 +95,7 @@ Don't worry too much for now what each bit is doing, but if you are curious feel
 
 Next, we need to create our return data, e.g.
 
-```
+```json
 {
     "id": 1,
     "content": "Hello, World!"
@@ -108,7 +108,7 @@ will present you with an empty class called `Greeting` in a `demo.models` packag
 
 Replace the contents with this:
 
-```
+```java
 package demo.models;
 
 import lombok.AllArgsConstructor;
@@ -156,7 +156,7 @@ Next, we need a controller to serve the `GET` request. Going through the same
 process again create a new class called `demo.controllers.GreetingController`
 and replace the content with:
 
-```
+```java
 package demo.controllers;
 
 
@@ -183,7 +183,7 @@ public class GreetingController {
 Finally, to run this, we need an entry point. Create a new class called `demo.Application`
 with the following:
 
-```
+```java
 package demo;
 
 
@@ -217,7 +217,7 @@ use mean that it will be converted when required into the appropriate (`Json`) t
 Lets add a test for this controller. In the `java` directory in `test`, create a new class
 called `demo.controllers.GreetingControllerTest`. In there, paste the following:
 
-```
+```java
 package demo.controllers;
 
 
