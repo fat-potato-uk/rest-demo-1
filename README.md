@@ -19,6 +19,11 @@ To start:
 In intelliJ, go `File->New->Project..` and click on the `maven` icon in the left
 hand pane. Click next and use `rest_demo_1` as the `artifact` and `groupId`.
 
+_Note: You might also need to add the Java 12 JDK to intelliJ (via the new button next to the
+project SDK drop down)_
+
+![NewProject](createProject.png?raw=true "NewProject")
+
 You should be presented with a project with the following structure:
 
 ```
@@ -151,6 +156,10 @@ public class Greeting {
 You can remove the commented out code, but this serves as an illustration on 
 what `Lombok` gives us. Ask more about this and I can go into more detail on 
 what it provides.
+
+_Note: If you didn't install the intelliJ `Lombok` plugin previously, goto 
+`IntelliJ`->`Preferences` then search for `Plugins` then search for `Lombok`
+in the provided window._
 
 Next, we need a controller to serve the `GET` request. Going through the same
 process again create a new class called `demo.controllers.GreetingController`
