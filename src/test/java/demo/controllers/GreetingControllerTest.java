@@ -29,7 +29,7 @@ public class GreetingControllerTest {
     }
 
     @Test
-    public void paramGreetingShouldReturnTailoredMesage() throws Exception {
+    public void paramGreetingShouldReturnTailoredMessage() throws Exception {
         this.mockMvc.perform(get("/greeting").param("name", "Java World"))
                 .andExpect(status().isOk())
                 .andExpect(jsonPath("$.content").value("Hello, Java World!"));
