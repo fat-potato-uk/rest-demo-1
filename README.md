@@ -19,7 +19,7 @@ To start:
 In intelliJ, go `File->New->Project..` and click on the `maven` icon in the left
 hand pane. Click next and use `rest_demo_1` as the `artifact` and `groupId`.
 
-_Note: You might also need to add the Java 12 JDK to intelliJ (via the new button next to the
+_Note: You might also need to add the Java 13 JDK to intelliJ (via the new button next to the
 project SDK drop down)_
 
 ![NewProject](createProject.png?raw=true "NewProject")
@@ -53,7 +53,7 @@ As a starting point, replace the `pom.xml` contents with the following:
     <parent>
         <groupId>org.springframework.boot</groupId>
         <artifactId>spring-boot-starter-parent</artifactId>
-        <version>2.1.6.RELEASE</version>
+        <version>2.2.5.RELEASE</version>
     </parent>
 
     <dependencies>
@@ -80,7 +80,7 @@ As a starting point, replace the `pom.xml` contents with the following:
     </dependencies>
 
     <properties>
-        <java.version>12</java.version>
+        <java.version>13</java.version>
     </properties>
 
 
