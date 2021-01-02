@@ -44,58 +44,59 @@ As a starting point, replace the `pom.xml` contents with the following:
 <project xmlns="http://maven.apache.org/POM/4.0.0"
          xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
          xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
-    <modelVersion>4.0.0</modelVersion>
+ <modelVersion>4.0.0</modelVersion>
 
-    <groupId>rest_demo_1</groupId>
-    <artifactId>rest_demo_1</artifactId>
-    <version>1.0-SNAPSHOT</version>
+ <groupId>rest_demo_1</groupId>
+ <artifactId>rest_demo_1</artifactId>
+ <version>1.0-SNAPSHOT</version>
 
-    <parent>
-        <groupId>org.springframework.boot</groupId>
-        <artifactId>spring-boot-starter-parent</artifactId>
-        <version>2.2.5.RELEASE</version>
-    </parent>
+ <properties>
+  <java.version>15</java.version>
+  <spring.boot.version>2.3.7.RELEASE</spring.boot.version>
+ </properties>
 
-    <dependencies>
-        <dependency>
-            <groupId>org.springframework.boot</groupId>
-            <artifactId>spring-boot-starter-web</artifactId>
-            <version>${spring.boot.version}</version>
-        </dependency>
-        <dependency>
-            <groupId>org.springframework.boot</groupId>
-            <artifactId>spring-boot-starter-test</artifactId>
-            <version>${spring.boot.version}</version>
-            <scope>test</scope>
-        </dependency>
-        <dependency>
-            <groupId>com.jayway.jsonpath</groupId>
-            <artifactId>json-path</artifactId>
-            <version>2.4.0</version>
-            <scope>test</scope>
-        </dependency>
-        <dependency>
-            <groupId>org.projectlombok</groupId>
-            <artifactId>lombok</artifactId>
-            <version>1.18.12</version>
-            <scope>provided</scope>
-        </dependency>
-    </dependencies>
+ <parent>
+  <groupId>org.springframework.boot</groupId>
+  <artifactId>spring-boot-starter-parent</artifactId>
+  <version>2.3.7.RELEASE</version>
+ </parent>
 
-    <properties>
-        <java.version>13</java.version>
-        <spring.boot.version>2.2.5.RELEASE</spring.boot.version>
-    </properties>
+ <dependencies>
+  <dependency>
+   <groupId>org.springframework.boot</groupId>
+   <artifactId>spring-boot-starter-web</artifactId>
+   <version>${spring.boot.version}</version>
+  </dependency>
+  <dependency>
+   <groupId>org.springframework.boot</groupId>
+   <artifactId>spring-boot-starter-test</artifactId>
+   <version>${spring.boot.version}</version>
+   <scope>test</scope>
+  </dependency>
+  <dependency>
+   <groupId>com.jayway.jsonpath</groupId>
+   <artifactId>json-path</artifactId>
+   <version>2.4.0</version>
+   <scope>test</scope>
+  </dependency>
+  <dependency>
+   <groupId>org.projectlombok</groupId>
+   <artifactId>lombok</artifactId>
+   <version>1.18.16</version>
+   <scope>provided</scope>
+  </dependency>
+ </dependencies>
 
-    <build>
-        <plugins>
-            <plugin>
-                <groupId>org.springframework.boot</groupId>
-                <artifactId>spring-boot-maven-plugin</artifactId>
-                <version>${spring.boot.version}</version>
-            </plugin>
-        </plugins>
-    </build>
+ <build>
+  <plugins>
+   <plugin>
+    <groupId>org.springframework.boot</groupId>
+    <artifactId>spring-boot-maven-plugin</artifactId>
+    <version>${spring.boot.version}</version>
+   </plugin>
+  </plugins>
+ </build>
+
 </project>
 
 ```
